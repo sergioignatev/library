@@ -1,3 +1,3 @@
 function myF(){
-    document.getElementById("demo").innerHTML="My Library"
+    document.getElementById("demo").innerHTML="myLibrary"
 }
