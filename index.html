@@ -1,8 +1,22 @@
 function myF(){
     let center=document.getElementsByClassName('center');
     
-    for(let i=0; i<center.length; i++)
+    for(let i=0; i<center.length;i++)
     {center[i].style.textAlign="center"
     }
+
+
+  let efrem=document.getElementsByClassName("efrem");
+  for(let e=0;e<efrem.length;e++){
+  efrem[e].innerHTML=`<div>
+  <h1>ПРИВЕТ ЕФРЕМ</h1>
+  <img style="max-width:60%" src=" https://sergioignatev.github.io/gitImages/baguettes.jpg"/>
+  </div>`
+  }
+
+
+
+
+
 }
 myF()
