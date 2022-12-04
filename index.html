@@ -12,10 +12,25 @@ function Red(){
         
     red[i].innerHTML+="<h1>Hello Efrems</h1><h2>You Are here?</h2><img style='width:300px' src='https://sergioignatev.github.io/gitImages/baguettes.jpg'/>"    }
 }
+setInterval(Container,1)
 function Container(){
-document.querySelector("body").style.margin="0px";
-document.querySelector("body").style.background="grey";
+let w=window.innerWidth;
+width="100%";
+if(w<576){
+width="300px"
+}else if(w>576){
+width="549px"
+}else if(w>768){
+width="720px"
+}else if(w>992){
+width="720px"
+}
+let margins=document.getElementsByClassName("margins");
+for(let i=0;i<margins.length;i++){
+margins[i].style.maxWidth=width;
 
+
+}
 }
 Red()
 myF()
